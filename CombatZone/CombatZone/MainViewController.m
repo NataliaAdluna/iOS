@@ -15,9 +15,8 @@
 @implementation MainViewController
 - (void) navi:(UIGestureRecognizer *)recognizer{
     NSLog(@"jestem w navi");
-    NSString *iTunesLink = @"https://www.google.pl/maps/place/Basen+AGH/@50.06819,19.900559,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x8238af568ff8e769";
-    
-    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:iTunesLink]];
+    NSString *naviLink = @"https://www.google.pl/maps/place/Basen+AGH/@50.06819,19.900559,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x8238af568ff8e769";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:naviLink]];
     
 }
 
@@ -43,6 +42,8 @@
 }
 - (void) facebook:(UIGestureRecognizer *)recognizer{
     NSLog(@"jestem w facebook");
+    NSString *facebookLink = @"https://www.facebook.com/pages/Combat-Zone/395073473912177?fref=ts";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:facebookLink]];
     //[self.tmplabel setText:[NSString stringWithFormat:@"trololo"]];
     
 }
@@ -60,6 +61,8 @@
 }
 - (void) page:(UIGestureRecognizer *)recognizer{
     NSLog(@"jestem w page");
+    NSString *pageLink = @"http://combat-zone.com.pl/";
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:pageLink]];
     //[self.tmplabel setText:[NSString stringWithFormat:@"trololo"]];
     
 }
