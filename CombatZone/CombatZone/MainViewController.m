@@ -15,7 +15,9 @@
 @implementation MainViewController
 - (void) navi:(UIGestureRecognizer *)recognizer{
     NSLog(@"jestem w navi");
-    //[self.tmplabel setText:[NSString stringWithFormat:@"trololo"]];
+    NSString *iTunesLink = @"https://www.google.pl/maps/place/Basen+AGH/@50.06819,19.900559,17z/data=!3m1!4b1!4m2!3m1!1s0x0:0x8238af568ff8e769";
+    
+    [[UIApplication sharedApplication] openURL:[NSURL URLWithString:iTunesLink]];
     
 }
 
