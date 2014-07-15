@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		96043098197551E5003D6113 /* TrainingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96043097197551E5003D6113 /* TrainingViewController.m */; };
+		96B04CFE197539E100EE4326 /* SeminarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B04CFD197539E100EE4326 /* SeminarViewController.m */; };
 		96E8E66A1973CE5B0009FB58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E8E6691973CE5B0009FB58 /* Foundation.framework */; };
 		96E8E66C1973CE5B0009FB58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E8E66B1973CE5B0009FB58 /* CoreGraphics.framework */; };
 		96E8E66E1973CE5B0009FB58 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E8E66D1973CE5B0009FB58 /* UIKit.framework */; };
@@ -35,6 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		96043096197551E5003D6113 /* TrainingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingViewController.h; sourceTree = "<group>"; };
+		96043097197551E5003D6113 /* TrainingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingViewController.m; sourceTree = "<group>"; };
+		96B04CFC197539E100EE4326 /* SeminarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeminarViewController.h; sourceTree = "<group>"; };
+		96B04CFD197539E100EE4326 /* SeminarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeminarViewController.m; sourceTree = "<group>"; };
 		96E8E6661973CE5B0009FB58 /* CombatZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombatZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		96E8E6691973CE5B0009FB58 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		96E8E66B1973CE5B0009FB58 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -120,6 +126,10 @@
 				96E8E67B1973CE5B0009FB58 /* Images.xcassets */,
 				96E8E6701973CE5B0009FB58 /* Supporting Files */,
 				96E8E6981973CE800009FB58 /* Main.storyboard */,
+				96043096197551E5003D6113 /* TrainingViewController.h */,
+				96043097197551E5003D6113 /* TrainingViewController.m */,
+				96B04CFC197539E100EE4326 /* SeminarViewController.h */,
+				96B04CFD197539E100EE4326 /* SeminarViewController.m */,
 				96E8E69D1973E7530009FB58 /* NewsViewController.h */,
 				96E8E69E1973E7530009FB58 /* NewsViewController.m */,
 				96E8E69A1973CEF10009FB58 /* MainViewController.h */,
@@ -255,7 +265,9 @@
 			files = (
 				96E8E67A1973CE5B0009FB58 /* AppDelegate.m in Sources */,
 				96E8E69C1973CEF10009FB58 /* MainViewController.m in Sources */,
+				96043098197551E5003D6113 /* TrainingViewController.m in Sources */,
 				96E8E6761973CE5B0009FB58 /* main.m in Sources */,
+				96B04CFE197539E100EE4326 /* SeminarViewController.m in Sources */,
 				96E8E69F1973E7530009FB58 /* NewsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -455,6 +467,7 @@
 				96E8E6941973CE5B0009FB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		96E8E6951973CE5B0009FB58 /* Build configuration list for PBXNativeTarget "CombatZoneTests" */ = {
 			isa = XCConfigurationList;
@@ -463,6 +476,7 @@
 				96E8E6971973CE5B0009FB58 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

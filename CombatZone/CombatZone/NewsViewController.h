@@ -8,7 +8,10 @@
 
 #import <UIKit/UIKit.h>
 
-@interface NewsViewController : UIViewController
+@interface NewsViewController : UIViewController<UITableViewDelegate,UITableViewDataSource>
 @property (weak, nonatomic) IBOutlet UILabel *newsLabel;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) IBOutlet UIImageView *backButton;
+
 
 @end
