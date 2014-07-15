@@ -15,6 +15,11 @@
 @implementation TrainingViewController
 @synthesize responseData = _responseData;
 
+- (void) back:(UIGestureRecognizer *)recognizer{
+    //[self performSegueWithIdentifier:@"backFromNewsSegue" sender:self];
+    [self dismissViewControllerAnimated:YES completion:nil];
+}
+
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
@@ -27,6 +32,12 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
+    
+    UITapGestureRecognizer *singleTapBack= [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(back:)];
+    [singleTapBack setNumberOfTapsRequired:1];
+    [self.back setUserInteractionEnabled:YES];
+    [self.back addGestureRecognizer:singleTapBack];
+    
     [self loadData];
     // Do any additional setup after loading the view.
 }

@@ -23,6 +23,7 @@
 @property (weak, nonatomic) IBOutlet UILabel *Gr2Pt;
 @property (weak, nonatomic) IBOutlet UILabel *Gr2So;
 @property (weak, nonatomic) IBOutlet UILabel *Gr2Nd;
+@property (weak, nonatomic) IBOutlet UIImageView *back;
 
 
 
