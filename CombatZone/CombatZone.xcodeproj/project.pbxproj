@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		96043098197551E5003D6113 /* TrainingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96043097197551E5003D6113 /* TrainingViewController.m */; };
+		96120AD0197669950090DF37 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96120ACF197669950090DF37 /* PhotoViewController.m */; };
+		96120AD319766A4B0090DF37 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96120AD219766A4B0090DF37 /* ImageCell.m */; };
+		967ED8C219769DF500B3F0F2 /* FullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967ED8C119769DF500B3F0F2 /* FullScreenViewController.m */; };
 		96B04CFE197539E100EE4326 /* SeminarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96B04CFD197539E100EE4326 /* SeminarViewController.m */; };
 		96E8E66A1973CE5B0009FB58 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E8E6691973CE5B0009FB58 /* Foundation.framework */; };
 		96E8E66C1973CE5B0009FB58 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 96E8E66B1973CE5B0009FB58 /* CoreGraphics.framework */; };
@@ -39,6 +42,12 @@
 /* Begin PBXFileReference section */
 		96043096197551E5003D6113 /* TrainingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingViewController.h; sourceTree = "<group>"; };
 		96043097197551E5003D6113 /* TrainingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingViewController.m; sourceTree = "<group>"; };
+		96120ACE197669950090DF37 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
+		96120ACF197669950090DF37 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
+		96120AD119766A4B0090DF37 /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
+		96120AD219766A4B0090DF37 /* ImageCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCell.m; sourceTree = "<group>"; };
+		967ED8C019769DF500B3F0F2 /* FullScreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FullScreenViewController.h; sourceTree = "<group>"; };
+		967ED8C119769DF500B3F0F2 /* FullScreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FullScreenViewController.m; sourceTree = "<group>"; };
 		96B04CFC197539E100EE4326 /* SeminarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeminarViewController.h; sourceTree = "<group>"; };
 		96B04CFD197539E100EE4326 /* SeminarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeminarViewController.m; sourceTree = "<group>"; };
 		96E8E6661973CE5B0009FB58 /* CombatZone.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CombatZone.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -126,6 +135,12 @@
 				96E8E67B1973CE5B0009FB58 /* Images.xcassets */,
 				96E8E6701973CE5B0009FB58 /* Supporting Files */,
 				96E8E6981973CE800009FB58 /* Main.storyboard */,
+				967ED8C019769DF500B3F0F2 /* FullScreenViewController.h */,
+				967ED8C119769DF500B3F0F2 /* FullScreenViewController.m */,
+				96120AD119766A4B0090DF37 /* ImageCell.h */,
+				96120AD219766A4B0090DF37 /* ImageCell.m */,
+				96120ACE197669950090DF37 /* PhotoViewController.h */,
+				96120ACF197669950090DF37 /* PhotoViewController.m */,
 				96043096197551E5003D6113 /* TrainingViewController.h */,
 				96043097197551E5003D6113 /* TrainingViewController.m */,
 				96B04CFC197539E100EE4326 /* SeminarViewController.h */,
@@ -264,11 +279,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				96E8E67A1973CE5B0009FB58 /* AppDelegate.m in Sources */,
+				96120AD319766A4B0090DF37 /* ImageCell.m in Sources */,
+				967ED8C219769DF500B3F0F2 /* FullScreenViewController.m in Sources */,
 				96E8E69C1973CEF10009FB58 /* MainViewController.m in Sources */,
 				96043098197551E5003D6113 /* TrainingViewController.m in Sources */,
 				96E8E6761973CE5B0009FB58 /* main.m in Sources */,
 				96B04CFE197539E100EE4326 /* SeminarViewController.m in Sources */,
 				96E8E69F1973E7530009FB58 /* NewsViewController.m in Sources */,
+				96120AD0197669950090DF37 /* PhotoViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
