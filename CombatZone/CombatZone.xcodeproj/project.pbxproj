@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		96043098197551E5003D6113 /* TrainingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96043097197551E5003D6113 /* TrainingViewController.m */; };
+		960B264F1977B2D400042FBC /* YoutubeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B264E1977B2D400042FBC /* YoutubeViewController.m */; };
+		960B26521977B32A00042FBC /* YoutubeCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B26511977B32A00042FBC /* YoutubeCell.m */; };
+		960B26551977C1FB00042FBC /* ToastView.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B26541977C1FB00042FBC /* ToastView.m */; };
+		960B26581977C42200042FBC /* Reachability.m in Sources */ = {isa = PBXBuildFile; fileRef = 960B26571977C42200042FBC /* Reachability.m */; };
 		96120AD0197669950090DF37 /* PhotoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 96120ACF197669950090DF37 /* PhotoViewController.m */; };
 		96120AD319766A4B0090DF37 /* ImageCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 96120AD219766A4B0090DF37 /* ImageCell.m */; };
 		967ED8C219769DF500B3F0F2 /* FullScreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 967ED8C119769DF500B3F0F2 /* FullScreenViewController.m */; };
@@ -42,6 +46,14 @@
 /* Begin PBXFileReference section */
 		96043096197551E5003D6113 /* TrainingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TrainingViewController.h; sourceTree = "<group>"; };
 		96043097197551E5003D6113 /* TrainingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TrainingViewController.m; sourceTree = "<group>"; };
+		960B264D1977B2D400042FBC /* YoutubeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoutubeViewController.h; sourceTree = "<group>"; };
+		960B264E1977B2D400042FBC /* YoutubeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoutubeViewController.m; sourceTree = "<group>"; };
+		960B26501977B32A00042FBC /* YoutubeCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YoutubeCell.h; sourceTree = "<group>"; };
+		960B26511977B32A00042FBC /* YoutubeCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YoutubeCell.m; sourceTree = "<group>"; };
+		960B26531977C1FB00042FBC /* ToastView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ToastView.h; sourceTree = "<group>"; };
+		960B26541977C1FB00042FBC /* ToastView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ToastView.m; sourceTree = "<group>"; };
+		960B26561977C42200042FBC /* Reachability.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Reachability.h; sourceTree = "<group>"; };
+		960B26571977C42200042FBC /* Reachability.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Reachability.m; sourceTree = "<group>"; };
 		96120ACE197669950090DF37 /* PhotoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotoViewController.h; sourceTree = "<group>"; };
 		96120ACF197669950090DF37 /* PhotoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoViewController.m; sourceTree = "<group>"; };
 		96120AD119766A4B0090DF37 /* ImageCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCell.h; sourceTree = "<group>"; };
@@ -135,6 +147,14 @@
 				96E8E67B1973CE5B0009FB58 /* Images.xcassets */,
 				96E8E6701973CE5B0009FB58 /* Supporting Files */,
 				96E8E6981973CE800009FB58 /* Main.storyboard */,
+				960B26561977C42200042FBC /* Reachability.h */,
+				960B26571977C42200042FBC /* Reachability.m */,
+				960B264D1977B2D400042FBC /* YoutubeViewController.h */,
+				960B264E1977B2D400042FBC /* YoutubeViewController.m */,
+				960B26531977C1FB00042FBC /* ToastView.h */,
+				960B26541977C1FB00042FBC /* ToastView.m */,
+				960B26501977B32A00042FBC /* YoutubeCell.h */,
+				960B26511977B32A00042FBC /* YoutubeCell.m */,
 				967ED8C019769DF500B3F0F2 /* FullScreenViewController.h */,
 				967ED8C119769DF500B3F0F2 /* FullScreenViewController.m */,
 				96120AD119766A4B0090DF37 /* ImageCell.h */,
@@ -278,10 +298,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				960B26581977C42200042FBC /* Reachability.m in Sources */,
 				96E8E67A1973CE5B0009FB58 /* AppDelegate.m in Sources */,
+				960B26521977B32A00042FBC /* YoutubeCell.m in Sources */,
 				96120AD319766A4B0090DF37 /* ImageCell.m in Sources */,
 				967ED8C219769DF500B3F0F2 /* FullScreenViewController.m in Sources */,
+				960B26551977C1FB00042FBC /* ToastView.m in Sources */,
 				96E8E69C1973CEF10009FB58 /* MainViewController.m in Sources */,
+				960B264F1977B2D400042FBC /* YoutubeViewController.m in Sources */,
 				96043098197551E5003D6113 /* TrainingViewController.m in Sources */,
 				96E8E6761973CE5B0009FB58 /* main.m in Sources */,
 				96B04CFE197539E100EE4326 /* SeminarViewController.m in Sources */,

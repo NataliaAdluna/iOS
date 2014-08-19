@@ -153,10 +153,10 @@
     
     if(portraitOrientation){
         CGFloat w = [[UIScreen mainScreen] bounds].size.width;
-        constraintSize = CGSizeMake(w*0.8f, MAXFLOAT);
+        constraintSize = CGSizeMake(w-40, MAXFLOAT); // -40 - orginal byl *0.8f
     }else{
         CGFloat h = [[UIScreen mainScreen] bounds].size.height;
-        constraintSize = CGSizeMake(h*0.8f, MAXFLOAT);
+        constraintSize = CGSizeMake(h-40, MAXFLOAT); // -40 - orginal byl *0.8f
     }
     CGSize labelSize = [cellText sizeWithFont:cellFont constrainedToSize:constraintSize lineBreakMode:UILineBreakModeWordWrap];
     

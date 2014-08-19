@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 #import "ImageCell.h"
+#import "ToastView.h"
 @interface PhotoViewController : UICollectionViewController
 @property (strong, nonatomic) IBOutlet UICollectionView *CV;
 

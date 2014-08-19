@@ -155,8 +155,8 @@
                         <segue destination="gE8-71-AlA" kind="modal" identifier="newsSegue" id="46m-xP-L9q"/>
                         <segue destination="85o-xU-Yjw" kind="modal" identifier="trainingSegue" id="Ie2-b2-HZ8"/>
                         <segue destination="yQK-HZ-mRh" kind="modal" identifier="seminarSegue" id="4ep-Eh-eQh"/>
-                        <segue destination="ynP-WX-oic" kind="modal" identifier="playSegue" id="Saj-tM-Heg"/>
                         <segue destination="iow-kX-ITW" kind="modal" identifier="photoSegue" id="Jmy-E1-0La"/>
+                        <segue destination="haR-bE-U1e" kind="modal" identifier="playSegue" id="OXQ-JE-OCn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="is9-I4-zaJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -461,23 +461,86 @@
             </objects>
             <point key="canvasLocation" x="559" y="383"/>
         </scene>
-        <!--View Controller-->
-        <scene sceneID="D7G-4Q-DU1">
+        <!--Youtube View Controller-->
+        <scene sceneID="WKP-Jc-uLo">
             <objects>
-                <viewController id="ynP-WX-oic" sceneMemberID="viewController">
-                    <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="5Ns-Fj-4UW"/>
-                        <viewControllerLayoutGuide type="bottom" id="hMp-4U-Qfi"/>
-                    </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="SLS-v3-1kY">
+                <collectionViewController autoresizesArchivedViewToFullSize="NO" id="haR-bE-U1e" customClass="YoutubeViewController" sceneMemberID="viewController">
+                    <collectionView key="view" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" minimumZoomScale="0.0" maximumZoomScale="0.0" dataMode="prototypes" id="SQe-Jh-fJS">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="8so-Cv-mhI" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="PfQ-F0-S1O">
+                            <size key="itemSize" width="260" height="120"/>
+                            <size key="headerReferenceSize" width="0.0" height="72"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <imageView key="backgroundView" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="background-jpg" id="UNj-9u-okA">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        </imageView>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="myCell" id="F7u-Em-gwg" customClass="YoutubeCell">
+                                <rect key="frame" x="30" y="72" width="260" height="120"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="260" height="120"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="KJX-kZ-sCa">
+                                            <rect key="frame" x="7" y="10" width="100" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" constant="100" id="sMv-PT-BMc"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oC9-VL-IjT">
+                                            <rect key="frame" x="115" y="10" width="145" height="100"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="0.59999999999999998" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="KJX-kZ-sCa" firstAttribute="leading" secondItem="F7u-Em-gwg" secondAttribute="leading" constant="7" id="1Hg-ZN-bhX"/>
+                                    <constraint firstItem="oC9-VL-IjT" firstAttribute="top" secondItem="KJX-kZ-sCa" secondAttribute="top" id="2ql-fO-HkI"/>
+                                    <constraint firstItem="KJX-kZ-sCa" firstAttribute="top" secondItem="F7u-Em-gwg" secondAttribute="top" constant="10" id="629-oK-9HP"/>
+                                    <constraint firstAttribute="trailing" secondItem="oC9-VL-IjT" secondAttribute="trailing" id="GJe-I9-SPt"/>
+                                    <constraint firstAttribute="bottom" secondItem="KJX-kZ-sCa" secondAttribute="bottom" constant="10" id="Ig9-ws-SVM"/>
+                                    <constraint firstItem="oC9-VL-IjT" firstAttribute="leading" secondItem="F7u-Em-gwg" secondAttribute="leading" constant="115" id="ejN-U0-GtD"/>
+                                    <constraint firstItem="KJX-kZ-sCa" firstAttribute="bottom" secondItem="oC9-VL-IjT" secondAttribute="bottom" id="jU7-Xq-fNf"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="image" destination="KJX-kZ-sCa" id="brB-vU-aUg"/>
+                                    <outlet property="text" destination="oC9-VL-IjT" id="fsG-qc-Fby"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <collectionReusableView key="sectionHeaderView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="headerView" id="ATg-1H-HEd">
+                            <rect key="frame" x="0.0" y="0.0" width="320" height="72"/>
+                            <autoresizingMask key="autoresizingMask"/>
+                            <subviews>
+                                <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="back" translatesAutoresizingMaskIntoConstraints="NO" id="Wn9-3u-1U4">
+                                    <rect key="frame" x="20" y="19" width="32" height="32"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </imageView>
+                            </subviews>
+                        </collectionReusableView>
+                        <connections>
+                            <outlet property="dataSource" destination="haR-bE-U1e" id="a60-Eo-Uc2"/>
+                            <outlet property="delegate" destination="haR-bE-U1e" id="yBl-oi-Fwe"/>
+                        </connections>
+                    </collectionView>
+                    <connections>
+                        <outlet property="CV" destination="SQe-Jh-fJS" id="joR-qW-Ggh"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2gs-fF-Z2R" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="954" y="-293"/>
+            <point key="canvasLocation" x="559" y="1759"/>
         </scene>
         <!--Seminar View Controller-->
         <scene sceneID="9k0-V2-itv">
@@ -645,7 +708,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xsn-Ce-gWg" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="wra-Jj-tok" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="968" y="383"/>
+            <point key="canvasLocation" x="1239" y="383"/>
         </scene>
         <!--Full Screen View Controller-->
         <scene sceneID="4oh-cq-Dmu">
@@ -693,7 +756,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ntp-ld-sZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1398" y="383"/>
+            <point key="canvasLocation" x="1669" y="383"/>
         </scene>
         <!--News View Controller-->
         <scene sceneID="8tu-we-b2a">

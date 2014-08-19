@@ -9,7 +9,7 @@
 #import "MainViewController.h"
 
 @interface MainViewController ()
-
+@property BOOL isNetwork;
 @end
 
 @implementation MainViewController
@@ -80,6 +80,20 @@
 {
     [super viewDidLoad];
     
+    Reachability *networkReachability = [Reachability reachabilityForInternetConnection];
+    NetworkStatus networkStatus = [networkReachability currentReachabilityStatus];
+    if (networkStatus == NotReachable) {
+        self.isNetwork = NO;
+        [ToastView showToastInParentView:self.view withText:@"Aplikacja wymaga połączenia z Internetem" withDuaration:2.0];
+    } else {
+        self.isNetwork = YES;
+        //NSLog(@"There IS internet connection");
+        
+    }
+    
+    
+    
+    if(self.isNetwork){
     UITapGestureRecognizer *singleTapNavi= [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(navi:)];
     [singleTapNavi setNumberOfTapsRequired:1];
     [self.navi setUserInteractionEnabled:YES];
@@ -119,7 +133,7 @@
     [singleTapPage setNumberOfTapsRequired:1];
     [self.page setUserInteractionEnabled:YES];
     [self.page addGestureRecognizer:singleTapPage];
-    
+    }
     
 
 }

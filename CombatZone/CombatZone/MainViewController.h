@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "Reachability.h"
+#import "ToastView.h"
 
 @interface MainViewController : UIViewController
 @property (weak, nonatomic) IBOutlet UIImageView *news;
